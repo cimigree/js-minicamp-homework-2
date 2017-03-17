@@ -57,21 +57,12 @@ function isPrime(num) {
   return false;
   if (num===2)
   return true;
-  if (num<8)
-  {for (var i = 2; i < num; i++) {
+  for (var i = 2; i < num; i++) {
     if (num%i===0)
     return false;
     else 
-    return true;}
-  } 
-  else 
-   {for (var j = 2; j < 8; j++) {
-    if (num%j===0)
-    return false;
-    else 
-    return true;}
-  }
-  }
+    return true;} 
+}
 function returnFirst(arr) {
 
   return arr[0];
